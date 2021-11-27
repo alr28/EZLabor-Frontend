@@ -1,13 +1,13 @@
 language: node_js
 node_js:
- - "node"
+ - node
 
 cache: npm
 
-script: npm run serve
+script: npm run build
 
 deploy:
- provider: pages
+ provider: firebase
  skip_cleanup: true
  github_token: $GITHUB_TOKEN_VUE_TRAVIS
  local_dir: dist

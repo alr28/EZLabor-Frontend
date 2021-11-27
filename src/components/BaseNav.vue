@@ -1,4 +1,4 @@
-  <template>
+<template>
   <nav
     class="navbar"
     :class="[

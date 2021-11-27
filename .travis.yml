@@ -4,12 +4,12 @@ node_js:
 
 cache: npm
 
-script: npm run build
+script: npm run serve
 
 deploy:
  provider: pages
  skip_cleanup: true
- github_token: $GITHUB_TOKEN
+ github_token: $GITHUB_TOKEN_VUE_TRAVIS
  local_dir: dist
  on:
    branch: main
